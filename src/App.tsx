@@ -202,7 +202,6 @@ function App() {
 							</div>
 						</div>
 						<div id="titleContainer">
-							{/* <img src="/logo.png" alt="reverb_logo" id="reverbLogo" /> */}
 							<div id="title">
 								<div id="name">Brady Dukart</div>
 								<div id="logo">Reverb's Best New Software Engineer</div>
