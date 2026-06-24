@@ -167,8 +167,8 @@ function App() {
 	const [hireModalOpen, setHireModalOpen] = useState(false);
 
   return (
-		<div style={{backgroundColor: '#FEEFCD'}}>
-			<div id="body" onClick={() => hireModalOpen ? setHireModalOpen(false) : null}>
+		<div>
+			<div id="bodyContainer" onClick={() => hireModalOpen ? setHireModalOpen(false) : null}>
 			<div id="header">
 				<span>Brady Dukart</span>
 				<span id="contactLink" onClick={() => !hireModalOpen ? setHireModalOpen(true) : null}>Contact</span>

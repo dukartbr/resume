@@ -1,7 +1,8 @@
-#body {
+#bodyContainer {
   height: 100vh;
   font-family: "Roboto", sans-serif;
   position: relative;
+  background-color: #FEEFCD;
 }
 
 #header {
