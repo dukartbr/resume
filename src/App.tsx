@@ -111,7 +111,7 @@ const passionItems: PanelItem[] = [
 	{
 		id: 0,
 		title: 'What Makes Me The Best Candidate?',
-		description: `You'll never find someone more passionate about getting quality gear into the hands of musicians as quickly as possible, than me. The world needs more people making music, and Reverb is the best way for those musicians to get the gear they need to perfect their art, it would be an honor to be able to help in such an endevour. As a current Reverb buyer and seller, and certified gear and software addict, I will bring level of passion and care to the each line of code with a user focused mentality`,
+		description: `You'll never find someone more passionate about getting quality gear into the hands of musicians as quickly as possible, than me. The world needs more people making music, and Reverb is the best way for those musicians to get the gear they need to perfect their art, it would be an honor to be able to help in such an endevour. As a current Reverb buyer and seller, and certified gear and software addict, I will bring an unparalleled level of passion and care to the each line of code with a user focused mentality`,
 	},
 	{
 		id: 1,
