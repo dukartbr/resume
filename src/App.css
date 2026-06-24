@@ -1,8 +1,8 @@
 body {
-  height: 100vh;
-  background-color: #FEEFCD;
-  font-family: "Roboto", sans-serif;
-  position: relative;
+  height: 100vh !important;
+  background-color: #FEEFCD !important;
+  font-family: "Roboto", sans-serif !important;
+  position: relative !important;
 }
 
 #header {
@@ -33,6 +33,7 @@ body {
   margin-right: auto;
   margin-left: auto;
   font-weight: bold;
+  background-color: #FEEFCD;
   font-family: "Roboto", sans-serif;
 }
 
