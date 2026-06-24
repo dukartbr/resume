@@ -1,8 +1,8 @@
-body {
-  height: 100vh !important;
-  background-color: #FEEFCD !important;
-  font-family: "Roboto", sans-serif !important;
-  position: relative !important;
+#root {
+  height: 100vh;
+  background-color: #FEEFCD;
+  font-family: "Roboto", sans-serif;
+  position: relative;
 }
 
 #header {
