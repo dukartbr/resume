@@ -228,15 +228,15 @@ function App() {
 				{hireModalOpen && (
 				<div id="modal">
 						<span id="modalHeader">I'm so excited to connect with you!</span>
-						<span>Please feel free to reach me at at your earliest convenience</span>
+						<span>Feel free to reach out to me whenever!</span>
 						<div id="modalContact">
 							<a href="tel:701-729-3582">
 								<FaPhone className="modalIcon" />
-								<span className="modalIconTitle">Phone</span>
+								<span className="modalIconTitle">701-729-3582</span>
 							</a>
 							<a href="mailto:dukartbrady@gmail.com">
 								<FaEnvelope className="modalIcon" />
-								<span className="modalIconTitle">Email</span>
+								<span className="modalIconTitle">dukartbrady@gmail.com</span>
 							</a>
 							<a href="./BradyDukartResume.pdf" target="_blank">
 								<FaFile className="modalIcon" />
