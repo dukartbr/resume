@@ -325,6 +325,7 @@
   line-height: 25px;
   display: flex;
   position: relative;
+  cursor: pointer;
 }
 
 #toggleSwitch {

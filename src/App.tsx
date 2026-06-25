@@ -185,8 +185,8 @@ function App() {
 						<Dial title="Education/Experience" position={experienceDial} setPosition={setExperienceDial} cb={() => !expSelected ? setExpSelected(true) : null} />
 						<Dial title="About" position={extrasDial} setPosition={setExtrasDial} cb={() => expSelected ? setExpSelected(false) : null} />
 						</div>
-						<div id="toggleContainer">
-							<div id="toggleSwitch" onClick={() => setExpSelected(!expSelected)}>
+						<div id="toggleContainer" onClick={() => setExpSelected(!expSelected)}>
+							<div id="toggleSwitch">
 								<div id="toggleSwitchContainer"></div>
 								<div id="toggleSwitchKnob" style={{ top: expSelected ? '-15px': ''}}></div>
 							</div>
