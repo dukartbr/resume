@@ -30,6 +30,7 @@
   align-content: center;
   align-items: center;
   display: flex;
+  flex-wrap: wrap;
   max-width: 1432px;
   margin-right: auto;
   margin-left: auto;
@@ -105,10 +106,14 @@
 }
 
 #pedalContainer {
-  width: 550px;
+  width: 630px;
   margin-right: auto;
   margin-left: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
 #bigMuff {
   text-align: center;
   overflow: hidden;

@@ -211,12 +211,12 @@ function App() {
 					<span>Brady Dukart</span>
 					<span id="contactLink" onClick={() => !hireModalOpen ? setHireModalOpen(true) : null}>Contact</span>
 				</div>
-				{/* <div id="infoHeader">Dial the Knobs, Toggle the Swich, Stomp the Box, or Switch the Pedal!</div> */}
-				<div id="infoHeader">Dial the Knobs, Toggle the Swich, or Stomp the Box!</div>
+				{/* <div id="infoHeader">Dial the Knobs, Toggle the Switch, Stomp the Box, or Switch the Pedal!</div> */}
+				<div id="infoHeader">Dial the Knobs, Toggle the Switch, or Stomp the Box!</div>
 				<div id="main">
 					<InfoPanel title="Technical Skills" position={skillsDial} items={technicalSkills} panelHandler={(val) => setSkillsDial(val)}  />
-					{/* <FaChevronLeft style={{marginRight: 'auto', marginLeft: 'auto', cursor: 'pointer'}} onClick={() => setActivePedal(!activePedal) } /> */}
 						<div id="pedalContainer">
+							{/* <FaChevronLeft style={{cursor: 'pointer', fontSize: '1.5rem'}} onClick={() => setActivePedal(!activePedal) } /> */}
 							{activePedal ? (
 								<BigMuff
 									skillsDial={skillsDial}
@@ -242,8 +242,8 @@ function App() {
 									setHireModalOpen={setHireModalOpen}
 								/>
 							)}
+						{/* <FaChevronRight style={{cursor: 'pointer', fontSize: '1.5rem'}} onClick={() => setActivePedal(!activePedal)} /> */}
 						</div>
-					{/* <FaChevronRight style={{marginRight: 'auto', marginLeft: 'auto', cursor: 'pointer'}} onClick={() => setActivePedal(!activePedal)} /> */}
 					{expSelected ? (
 						<InfoPanel title="Education & Experience" position={experienceDial} items={experienceItems} panelHandler={(val) => setExperienceDial(val)} />
 					): (
