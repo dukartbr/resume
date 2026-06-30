@@ -91,7 +91,7 @@
   text-align: center;
 }
 
-#container {
+#bigMuffBody {
   background-color: #6d6d6d;
   max-width: 535px;
   height: 680px;
@@ -104,6 +104,11 @@
   box-shadow: 5px 10px 20px #000000;
 }
 
+#pedalContainer {
+  width: 550px;
+  margin-right: auto;
+  margin-left: auto;
+}
 #bigMuff {
   text-align: center;
   overflow: hidden;
@@ -116,13 +121,26 @@
   padding-top: 15px;
 }
 
-#dialsContainer {
+#tubeScreamerBody {
+  background-color: #367034;
+  max-width: 400px;
+  height: 680px;
+  flex-grow: 1;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 5px 10px 20px #000000;
+}
+
+.dialsContainer {
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
 
-#logo {
+#bigMuffTitle .logo {
   font-family: "Lilita One", sans-serif;
   font-weight: 400;
   font-size: 3rem;
@@ -164,10 +182,11 @@
  padding: 12px 0px 32px;
  text-transform: uppercase;
  font-optical-sizing: auto;
- font-style: bold;
+ text-align: center;
+ color: white;
 }
 
-#title {
+#bigMuffTitle {
   text-align: left;
   z-index: 2;
   position: relative;
@@ -186,7 +205,7 @@
   box-shadow: 0px 0px 5px #000000;
 }
 
-#titleContainer {
+.titleContainer {
   padding: 80px 0px 40px;
   position: relative;
   width: 100%;
@@ -201,14 +220,16 @@
   z-index: 1;
 }
 
-#name {
+#bigMuffTitle .name {
   font-size: 22px;
   text-transform: uppercase;
   font-family: "Roboto", sans-serif;
   font-optical-sizing: auto;
   font-weight: bold;
-  text-decoration: underline;
-
+  color: #ffffff;
+  border-bottom: 2px solid #FF6200;
+  width: 180px;
+  margin-bottom: 1rem;
 }
 
 #ghLink {
@@ -219,7 +240,7 @@
   font-style: normal;
 }
 
-#bottomContainer {
+#bigMuffStomp {
   align-content: center;
   align-items: center;
   justify-content: center;
@@ -229,6 +250,31 @@
   position: relative;
   z-index: 2;
   color: white;
+}
+
+#tubeScreamerStompContainer {
+  height: 400px;
+  padding: 12px;
+  border-radius: 18px;
+  background-color: #3e833c;
+  box-shadow: 0px -20px 30px #142b14;
+}
+
+#tubeScreamerStomp {
+  background-color: #6d6d6d;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  color: white;
+  border: 4px solid #000000;
+  border-radius: 18px;
+}
+
+#tubeScreamerStomp name {
+
 }
 
 #hireTitle {
@@ -266,6 +312,14 @@
   position: absolute;
   cursor: pointer;
   box-shadow: 5px 5px 15px #000000;
+}
+
+#infoHeader {
+  color: #444444;
+  text-align: center;
+  padding: 12px 0px;
+  font-size: 1.25rem;
+  font-family: "Lilita One", sans-serif;
 }
 
 .infoContainer {
@@ -307,18 +361,17 @@
 }
 
 .infoDropDownDescriptionList a {
-  text-decoration: none;
+  text-decoration: underline;
   color: #000000;
     padding: 6px 0px;
 }
 
 .infoDropDownDescriptionList a:hover {
-  text-decoration: underline;
   cursor: pointer;
   color: #000000;
 }
 
-#toggleContainer {
+.toggleContainer {
   width: 200px;
   margin-right: auto;
   margin-left: auto;
@@ -329,13 +382,13 @@
   cursor: pointer;
 }
 
-#toggleSwitch {
+.toggleSwitch {
   position: absolute;
   left: -30px;
   top: 15px;
 }
 
-#toggleSwitchContainer {
+.toggleSwitchContainer {
   height: 20px;
   width: 20px;
   border-radius: 20px;
@@ -345,7 +398,7 @@
   left: -5px;
 }
 
-#toggleSwitchKnob {
+.toggleSwitchKnob {
   height: 30px;
   width: 10px;
   background-color: #6d6d6d;

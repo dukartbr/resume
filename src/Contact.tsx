@@ -14,7 +14,7 @@ export default function Contact() {
 						<FaEnvelope className="modalIcon" />
 						<span className="modalIconTitle">dukartbrady@gmail.com</span>
 					</a>
-					<a href="./BradyDukartResume.pdf" target="_blank">
+					<a href="./BradyDukart_Resume.pdf" target="_blank">
 						<FaFile className="modalIcon" />
 						<span className="modalIconTitle">Resume</span>
 					</a>

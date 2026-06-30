@@ -21,7 +21,11 @@ export default function InfoPanel({title, position, items,  panelHandler}: {titl
 				return (
 					<div key={s.id} className="infoDropDownHeader" onClick={() => panelHandler(s.id * 40 - 140)}>
 						<div style={{display: 'flex', justifyContent: 'space-between'}}>
-							<span>{s.title}</span>
+							{s.icon ? (
+								<div style={{ display: 'flex', width: '70%', gap: '1rem'}}>{s.icon} {s.title}</div>
+							): (
+								<span>{s.icon} {s.title}</span>
+							)}
 							{s.years && (
 								<span>{s.years} years</span>
 							)}
