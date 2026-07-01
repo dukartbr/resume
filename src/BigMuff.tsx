@@ -18,9 +18,9 @@ export default function BigMuff({
 		<div id="bigMuffBody">
 			<div id="bigMuff">
 				<div className="dialsContainer" style={{padding: '32px 0px 0px'}}>
-				<Dial title="Skills" position={skillsDial} setPosition={setSkillsDial} />
+				<Dial title="About" position={extrasDial} setPosition={setExtrasDial}  />
+				<Dial title="Skills" position={skillsDial} setPosition={setSkillsDial} cb={() => expSelected ? setExpSelected(false) : null} />
 				<Dial title="Education/Experience" position={experienceDial} setPosition={setExperienceDial} cb={() => !expSelected ? setExpSelected(true) : null} />
-				<Dial title="About" position={extrasDial} setPosition={setExtrasDial} cb={() => expSelected ? setExpSelected(false) : null} />
 				</div>
 				<div className="toggleContainer" onClick={() => setExpSelected(!expSelected)}>
 					<div className="toggleSwitch">
@@ -33,7 +33,7 @@ export default function BigMuff({
 							<div className="light" style={{ backgroundColor: expSelected ? '#ff0000' : ''}}></div>
 							</div>
 						<div style={{display: 'flex'}}>
-							<p>About</p>
+							<p>Technical Skills</p>
 							<div className="light" style={{ backgroundColor: expSelected ? '' : '#ff0000'}}></div>
 						</div>
 					</div>

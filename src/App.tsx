@@ -214,7 +214,7 @@ function App() {
 				{/* <div id="infoHeader">Dial the Knobs, Toggle the Switch, Stomp the Box, or Switch the Pedal!</div> */}
 				<div id="infoHeader">Dial the Knobs, Toggle the Switch, or Stomp the Box!</div>
 				<div id="main">
-					<InfoPanel title="Technical Skills" position={skillsDial} items={technicalSkills} panelHandler={(val) => setSkillsDial(val)}  />
+					<InfoPanel title="About" position={extrasDial} items={passionItems} panelHandler={(val) => setExtrasDial(val)} />
 						<div id="pedalContainer">
 							{/* <FaChevronLeft style={{cursor: 'pointer', fontSize: '1.5rem'}} onClick={() => setActivePedal(!activePedal) } /> */}
 							{activePedal ? (
@@ -247,7 +247,7 @@ function App() {
 					{expSelected ? (
 						<InfoPanel title="Education & Experience" position={experienceDial} items={experienceItems} panelHandler={(val) => setExperienceDial(val)} />
 					): (
-						<InfoPanel title="About" position={extrasDial} items={passionItems} panelHandler={(val) => setExtrasDial(val)} />
+							<InfoPanel title="Technical Skills" position={skillsDial} items={technicalSkills} panelHandler={(val) => setSkillsDial(val)}  />
 					)}
 				</div>
 			</div>
