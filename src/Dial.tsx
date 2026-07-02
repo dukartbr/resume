@@ -13,7 +13,7 @@ export default function Dial({title, position, setPosition, cb}: {title: string,
 
 		function handlePointerMove(mover: any) {
 			const deltaY = startY.current - mover.clientY;
-			const deltaX = startY.current - mover.clientY;
+			const deltaX = -(startX.current - mover.clientX);
 			const nextValue = startValue.current + deltaY + deltaX;
 			const clamped = Math.max(-140, Math.min(140, nextValue));
 			setPosition(clamped)
