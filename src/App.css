@@ -336,6 +336,8 @@
   padding: 12px;
   box-shadow: 5px 5px 5px #727272;
   overflow: hidden;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .infoTitle {

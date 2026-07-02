@@ -7,10 +7,11 @@ import { FaMusic, FaRegSmile, FaRegFile } from "react-icons/fa";
 import { GiGuitarBassHead } from "react-icons/gi";
 
 import './App.css'
+import { useWindowResize } from './utils'
+
 import Dial from './Dial'
 import InfoPanel from './InfoPanel'
 import Contact from './Contact'
-
 import BigMuff from './BigMuff'
 import TubeScreamer from './TubeScreamer'
 
@@ -200,9 +201,11 @@ function App() {
   const [extrasDial, setExtrasDial] = useState(-140)
 	const [expSelected, setExpSelected] = useState(true)
 	const [hireModalOpen, setHireModalOpen] = useState(false);
-
 	const [activePedal, setActivePedal] = useState(true);
 
+	const windowSize = useWindowResize();
+
+	console.log('windowSize', windowSize)
 
   return (
 		<div>
@@ -213,43 +216,56 @@ function App() {
 				</div>
 				{/* <div id="infoHeader">Dial the Knobs, Toggle the Switch, Stomp the Box, or Switch the Pedal!</div> */}
 				<div id="infoHeader">Dial the Knobs, Toggle the Switch, or Stomp the Box!</div>
-				<div id="main">
-					<InfoPanel title="About" position={extrasDial} items={passionItems} panelHandler={(val) => setExtrasDial(val)} />
-						<div id="pedalContainer">
-							{/* <FaChevronLeft style={{cursor: 'pointer', fontSize: '1.5rem'}} onClick={() => setActivePedal(!activePedal) } /> */}
-							{activePedal ? (
-								<BigMuff
-									skillsDial={skillsDial}
-									experienceDial={experienceDial}
-									extrasDial={extrasDial}
-									setSkillsDial={setSkillsDial}
-									setExperienceDial={setExperienceDial}
-									setExtrasDial={setExtrasDial}
-									expSelected={expSelected}
-									setExpSelected={setExpSelected}
-									setHireModalOpen={setHireModalOpen}
-								/>
-							): (
-								<TubeScreamer
-									skillsDial={skillsDial}
-									experienceDial={experienceDial}
-									extrasDial={extrasDial}
-									setSkillsDial={setSkillsDial}
-									setExperienceDial={setExperienceDial}
-									setExtrasDial={setExtrasDial}
-									expSelected={expSelected}
-									setExpSelected={setExpSelected}
-									setHireModalOpen={setHireModalOpen}
-								/>
-							)}
-						{/* <FaChevronRight style={{cursor: 'pointer', fontSize: '1.5rem'}} onClick={() => setActivePedal(!activePedal)} /> */}
-						</div>
-					{expSelected ? (
-						<InfoPanel title="Education & Experience" position={experienceDial} items={experienceItems} panelHandler={(val) => setExperienceDial(val)} />
-					): (
-							<InfoPanel title="Technical Skills" position={skillsDial} items={technicalSkills} panelHandler={(val) => setSkillsDial(val)}  />
-					)}
-				</div>
+				{true && (
+					<div id="main">
+						<InfoPanel title="About" position={extrasDial} items={passionItems} panelHandler={(val) => setExtrasDial(val)} />
+							<div id="pedalContainer">
+								{/* <FaChevronLeft style={{cursor: 'pointer', fontSize: '1.5rem'}} onClick={() => setActivePedal(!activePedal) } />
+								{activePedal ? (
+									<BigMuff
+										skillsDial={skillsDial}
+										experienceDial={experienceDial}
+										extrasDial={extrasDial}
+										setSkillsDial={setSkillsDial}
+										setExperienceDial={setExperienceDial}
+										setExtrasDial={setExtrasDial}
+										expSelected={expSelected}
+										setExpSelected={setExpSelected}
+										setHireModalOpen={setHireModalOpen}
+									/>
+								): (
+									<TubeScreamer
+										skillsDial={skillsDial}
+										experienceDial={experienceDial}
+										extrasDial={extrasDial}
+										setSkillsDial={setSkillsDial}
+										setExperienceDial={setExperienceDial}
+										setExtrasDial={setExtrasDial}
+										expSelected={expSelected}
+										setExpSelected={setExpSelected}
+										setHireModalOpen={setHireModalOpen}
+									/>
+								)}
+							<FaChevronRight style={{cursor: 'pointer', fontSize: '1.5rem'}} onClick={() => setActivePedal(!activePedal)} /> */}
+							<BigMuff
+								skillsDial={skillsDial}
+								experienceDial={experienceDial}
+								extrasDial={extrasDial}
+								setSkillsDial={setSkillsDial}
+								setExperienceDial={setExperienceDial}
+								setExtrasDial={setExtrasDial}
+								expSelected={expSelected}
+								setExpSelected={setExpSelected}
+								setHireModalOpen={setHireModalOpen}
+							/>
+							</div>
+						{expSelected ? (
+							<InfoPanel title="Education & Experience" position={experienceDial} items={experienceItems} panelHandler={(val) => setExperienceDial(val)} />
+						): (
+								<InfoPanel title="Technical Skills" position={skillsDial} items={technicalSkills} panelHandler={(val) => setSkillsDial(val)}  />
+						)}
+					</div>
+				)}
 			</div>
 			{hireModalOpen && <Contact />}
 		</div>
