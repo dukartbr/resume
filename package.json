@@ -4,10 +4,11 @@
   "version": "1.0.1",
   "type": "module",
   "scripts": {
+    "start": "NODE_NO_WARNINGS=1 vite",
     "dev": "vite",
     "build": "vite build",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
+    "deploy": "NODE_NO_WARNINGS=1 gh-pages -d dist",
     "lint": "eslint .",
     "preview": "vite preview"
   },
