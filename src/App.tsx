@@ -13,7 +13,7 @@ import Dial from './Dial'
 import InfoPanel from './InfoPanel'
 import Contact from './Contact'
 import BigMuff from './BigMuff'
-import TubeScreamer from './TubeScreamer'
+// import TubeScreamer from './TubeScreamer'
 
 export interface Dial {
   title: string,
