@@ -201,7 +201,7 @@ function App() {
   const [extrasDial, setExtrasDial] = useState(-140)
 	const [expSelected, setExpSelected] = useState(true)
 	const [hireModalOpen, setHireModalOpen] = useState(false);
-	const [activePedal, setActivePedal] = useState(true);
+	// const [activePedal, setActivePedal] = useState(true);
 
 	const windowSize = useWindowResize();
 
