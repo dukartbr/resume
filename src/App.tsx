@@ -262,7 +262,7 @@ function App() {
 						{expSelected ? (
 							<InfoPanel title="Education & Experience" position={experienceDial} items={experienceItems} panelHandler={(val) => setExperienceDial(val)} />
 						): (
-								<InfoPanel title="Technical Skills" position={skillsDial} items={technicalSkills} panelHandler={(val) => setSkillsDial(val)}  />
+							<InfoPanel title="Technical Skills" position={skillsDial} items={technicalSkills} panelHandler={(val) => setSkillsDial(val)}  />
 						)}
 					</div>
 				)}
