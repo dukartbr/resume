@@ -5,7 +5,7 @@ function calculatePanelOpen(position: number, id: number, count: number) {
     0,
     Math.min(
       count - 1,
-      Math.floor((position + 140) / 20)
+      Math.floor((position + 140) / 45)
     )
   );
 
