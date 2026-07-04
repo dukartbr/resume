@@ -19,7 +19,7 @@ export default function InfoPanel({title, position, items,  panelHandler}: {titl
 			<h2 className="infoTitle">{title}</h2>
 			{items.map(s => {
 				return (
-					<div key={s.id} className="infoDropDownHeader" onClick={() => panelHandler(s.id * 40 - 140)}>
+					<div key={s.id} className="infoDropDownHeader" onClick={() => panelHandler(s.id * 45 - 140)}>
 						<div style={{display: 'flex', justifyContent: 'space-between'}}>
 							{s.icon ? (
 								<div style={{ display: 'flex', width: '70%', gap: '1rem'}}>{s.icon} {s.title}</div>
