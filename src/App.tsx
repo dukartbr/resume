@@ -13,7 +13,7 @@ import Dial from './Dial'
 import InfoPanel from './InfoPanel'
 import Contact from './Contact'
 import BigMuff from './BigMuff'
-// import TubeScreamer from './TubeScreamer'
+import TubeScreamer from './TubeScreamer'
 
 export interface Dial {
   title: string,
@@ -203,9 +203,9 @@ function App() {
 	const [hireModalOpen, setHireModalOpen] = useState(false);
 	// const [activePedal, setActivePedal] = useState(true);
 
-	const windowSize = useWindowResize();
+	// const windowSize = useWindowResize();
 
-	console.log('windowSize', windowSize)
+	// console.log('windowSize', windowSize)
 
   return (
 		<div>
@@ -220,6 +220,17 @@ function App() {
 					<div id="main">
 						<InfoPanel title="About" position={extrasDial} items={passionItems} panelHandler={(val) => setExtrasDial(val)} />
 							<div id="pedalContainer">
+								<BigMuff
+										skillsDial={skillsDial}
+										experienceDial={experienceDial}
+										extrasDial={extrasDial}
+										setSkillsDial={setSkillsDial}
+										setExperienceDial={setExperienceDial}
+										setExtrasDial={setExtrasDial}
+										expSelected={expSelected}
+										setExpSelected={setExpSelected}
+										setHireModalOpen={setHireModalOpen}
+									/>
 								{/* <FaChevronLeft style={{cursor: 'pointer', fontSize: '1.5rem'}} onClick={() => setActivePedal(!activePedal) } />
 								{activePedal ? (
 									<BigMuff
@@ -247,17 +258,6 @@ function App() {
 									/>
 								)}
 							<FaChevronRight style={{cursor: 'pointer', fontSize: '1.5rem'}} onClick={() => setActivePedal(!activePedal)} /> */}
-							<BigMuff
-								skillsDial={skillsDial}
-								experienceDial={experienceDial}
-								extrasDial={extrasDial}
-								setSkillsDial={setSkillsDial}
-								setExperienceDial={setExperienceDial}
-								setExtrasDial={setExtrasDial}
-								expSelected={expSelected}
-								setExpSelected={setExpSelected}
-								setHireModalOpen={setHireModalOpen}
-							/>
 							</div>
 						{expSelected ? (
 							<InfoPanel title="Education & Experience" position={experienceDial} items={experienceItems} panelHandler={(val) => setExperienceDial(val)} />

@@ -39,17 +39,17 @@ export default function BigMuff({
 					</div>
 				</div>
 				<div className="titleContainer">
+					<img id="reverbLogo" src="./logo.png" />
 					<div id="bigMuffTitle">
 						<div className="name">Brady Dukart</div>
 						<div className="logo">Reverb's Best New Software Engineer</div>
 					</div>
 				</div>
 				<div id="bigMuffStomp">
-					<div id="activateButton" onClick={() => setHireModalOpen(true)}>
-						<div id="activateButtonSwitch">
-						</div>
+					<div className="activateButton" onClick={() => setHireModalOpen(true)}>
+						<div className="activateButtonSwitch"></div>
 					</div>
-					<div id="hireTitle" onClick={() => setHireModalOpen(true)}>
+					<div className="hireTitle" onClick={() => setHireModalOpen(true)}>
 						Stomp to Hire! <FaArrowTurnUp />
 					</div>
 				</div>
