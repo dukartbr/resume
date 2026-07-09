@@ -3,7 +3,7 @@ import { FaArrowTurnUp } from "react-icons/fa6";
 import Dial from './Dial'
 import type { Pedal } from './App'
 
-export default function BigMuff({
+export default function MiniMuff({
 	skillsDial,
 	experienceDial,
 	extrasDial,
@@ -12,12 +12,11 @@ export default function BigMuff({
 	setExtrasDial,
 	expSelected,
 	setExpSelected,
-	setHireModalOpen,
 	mobileClickHandler
 }: Pedal) {
 	return (
-		<div id="bigMuffBody">
-			<div id="bigMuff">
+		<div id="miniMuffBody">
+			<div id="miniMuff">
 				{mobileClickHandler ? (
 					<div className="dialsContainer" style={{padding: '32px 0px 0px'}}>
 						<Dial title="About" position={extrasDial} setPosition={setExtrasDial} cb={() => mobileClickHandler('about')} />
@@ -49,20 +48,6 @@ export default function BigMuff({
 						</div>
 					</div>
 				)}
-				<div className="titleContainer">
-					<div id="bigMuffTitle">
-						<div className="name">Brady Dukart</div>
-						<div className="logo">Your Best New Software Engineer</div>
-					</div>
-				</div>
-				<div id="bigMuffStomp">
-					<div className="activateButton" onClick={() => setHireModalOpen(true)}>
-						<div className="activateButtonSwitch"></div>
-					</div>
-					<div className="hireTitle" onClick={() => setHireModalOpen(true)}>
-						Stomp to Hire! <FaArrowTurnUp />
-					</div>
-				</div>
 			</div>
 		</div>
 	)

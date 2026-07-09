@@ -127,6 +127,33 @@
   padding-top: 15px;
 }
 
+#miniMuff {
+  text-align: center;
+  overflow: hidden;
+  flex-grow: 1;
+  background-color: #04b2d9;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 18px;
+  border: 4px #000000 solid;
+  padding-top: 15px;
+
+}
+
+#miniMuffBody {
+  background-color: #6d6d6d;
+  max-width: 535px;
+  height: 250px;
+  flex-grow: 1;
+  padding: 15px;
+  border-radius: 18px;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 5px 10px 20px #000000;
+  margin-bottom: 2rem;
+}
+
 #tubeScreamerBody {
   background-color: #367034;
   max-width: 400px;
@@ -340,7 +367,7 @@
   box-shadow: 5px 5px 15px #000000;
 }
 
-#infoHeader {
+.infoHeader {
   color: #444444;
   text-align: center;
   padding: 12px 0px;
