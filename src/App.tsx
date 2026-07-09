@@ -89,13 +89,13 @@ const technicalSkills: PanelItem[] = [
 		years: 1,
 		icon: <FaPython />
 	},
-	{
-		id: 6,
-		title: 'GraphQL',
-		description: `I've taken a short GraphQL course and really enjoyed how it felt more modern and understandable than SQL. I am, admittedly, more limited in my experience in this but as a fast learner and engineer who's passionate about not only creating a successful and secure product, but also improving the lives of musicians, I look forward to dedicating my time to mastering this tool.`,
-		years: 0.5,
-		icon: <GrGraphQl />
-	},
+	// {
+	// 	id: 6,
+	// 	title: 'GraphQL',
+	// 	description: `I've taken a short GraphQL course and really enjoyed how it felt more modern and understandable than SQL. I am, admittedly, more limited in my experience in this but as a fast learner and engineer who's passionate about not only creating a successful and secure product, but also improving the lives of musicians, I look forward to dedicating my time to mastering this tool.`,
+	// 	years: 0.5,
+	// 	icon: <GrGraphQl />
+	// },
 ]
 
 const experienceItems: PanelItem[] = [
@@ -141,34 +141,22 @@ const passionItems: PanelItem[] = [
 	{
 		id: 0,
 		title: 'What Makes Me The Best Candidate?',
-		description: `You'll never find someone more passionate about getting quality gear into the hands of musicians as quickly as possible, than me. The world needs more people making music, and Reverb is the best way for those musicians to get the gear they need to perfect their art, it would be an honor to be able to help in such an endevour. As a current Reverb buyer and seller, and certified gear and software addict, I will bring an unparalleled level of passion and care to the each line of code with a user focused mentality.`,
+		description: `I have over 8 years of professional software development experience. I approach every task with an end-user focused mentality to ensure that what we create a delightful user experience that everyone and their grandmother can use. I believe good software starts with clear designs, requirements, and communication`,
 		icon: <FaRegLightbulb />
 	},
 	{
 		id: 1,
-		title: 'Lets Talk Music!',
-		description: `I've been in local bands since I was fourteen and have always felt at home in local music scenes since. I've been in multiple bands of different genres while always making music of my own. I play guitar, bass, piano, a little drums, and am getting very into desktop synths currently.`,
-		icon: <FaMusic />
-	},
-	{
-		id: 2,
-		title: 'Lets Talk Gear!',
-		description: `I'm a total gear nut. I love collecting pedals, synths, guitars, amps, and pretty much anything that can help me make noise. While my focus at Reverb will always be on writing code and creating the best possible product, I'll admit I'm excited to hopefully nerd out with fellow gear dorks.`,
-		icon: <GiGuitarBassHead />
-	},
-	{
-		id: 3,
 		title: 'About Me',
 		description: `I'm from a small town in North Dakota, (oh yeah, you bet'chya), and went to college in Fargo. I moved to Chicago a year ago with my wife and our two dogs. When I'm not coding or making music, I enjoy collecting comic books and bike riding.`,
 		icon: <FaRegSmile />
 	},
 	{
-		id: 4,
+		id: 2,
 		title: 'Resume & References',
 		list: [
 			{
 				text: 'Resume',
-				link: './BradyDukartResume.pdf'
+				link: './BradyDukart_Resume.pdf'
 			},
 			{
 				text: 'Letter of Recommendation',
@@ -178,7 +166,7 @@ const passionItems: PanelItem[] = [
 		icon: <FaRegFile />
 	},
 	{
-		id: 5,
+		id: 3,
 		title: 'Contact',
 		description: `I'm available at any time at either of the following:`,
 		list: [
@@ -215,7 +203,7 @@ function App() {
 					<span id="contactLink" onClick={() => !hireModalOpen ? setHireModalOpen(true) : null}>Contact</span>
 				</div>
 				{/* <div id="infoHeader">Dial the Knobs, Toggle the Switch, Stomp the Box, or Switch the Pedal!</div> */}
-				<div id="infoHeader">Dial the Knobs, Toggle the Switch, or Stomp the Box!</div>
+				<div id="infoHeader">Dial the Knobs, Toggle the Switch, or Stomp the Pedal!</div>
 				{true && (
 					<div id="main">
 						<InfoPanel title="About" position={extrasDial} items={passionItems} panelHandler={(val) => setExtrasDial(val)} />

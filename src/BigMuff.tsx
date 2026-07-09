@@ -39,10 +39,9 @@ export default function BigMuff({
 					</div>
 				</div>
 				<div className="titleContainer">
-					<img id="reverbLogo" src="./logo.png" />
 					<div id="bigMuffTitle">
 						<div className="name">Brady Dukart</div>
-						<div className="logo">Reverb's Best New Software Engineer</div>
+						<div className="logo">Your Best New Software Engineer</div>
 					</div>
 				</div>
 				<div id="bigMuffStomp">
