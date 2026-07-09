@@ -29,7 +29,7 @@ export default function InfoPanel({title, position, items,  panelHandler}: {titl
 							{s.years  && s.years > 1 && (
 								<span>{s.years} years</span>
 							)}
-								{s.years  && s.years == 1 && (
+							{s.years  && s.years == 1 && (
 								<span>{s.years} year</span>
 							)}
 							{s.range && (

@@ -87,7 +87,7 @@ const technicalSkills: PanelItem[] = [
 	{
 		id: 5,
 		title: 'Python',
-		description: `Python is a language I'm currently learning in my free time and looking for any opportunity to use it more. I've built some personal terminal apps that get data an API request and update local .txt or SQL files.`,
+		description: `Python is a language I'm currently learning in my free time and looking for any opportunity to use it more. I've built some personal terminal apps that get data from an API request and update local .txt or NoSQL files.`,
 		years: 1,
 		icon: <FaPython />
 	},
