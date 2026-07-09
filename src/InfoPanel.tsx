@@ -26,8 +26,11 @@ export default function InfoPanel({title, position, items,  panelHandler}: {titl
 							): (
 								<span>{s.icon} {s.title}</span>
 							)}
-							{s.years && (
+							{s.years  && s.years > 1 && (
 								<span>{s.years} years</span>
+							)}
+								{s.years  && s.years == 1 && (
+								<span>{s.years} year</span>
 							)}
 							{s.range && (
 								<span>{s.range[0]}-{s.range[1]}</span>
