@@ -20,15 +20,15 @@ export default function BigMuff({
 			<div id="bigMuff">
 				{mobileClickHandler ? (
 					<div className="dialsContainer" style={{padding: '32px 0px 0px'}}>
-						<Dial title="About" position={extrasDial} setPosition={setExtrasDial} cb={() => mobileClickHandler('about')} />
-						<Dial title="Education/Experience" position={experienceDial} setPosition={setExperienceDial} cb={() => mobileClickHandler('ed')} />
-						<Dial title="Skills" position={skillsDial} setPosition={setSkillsDial} cb={() => mobileClickHandler('skills')} />
+						<Dial title="About" size="lg" position={extrasDial} setPosition={setExtrasDial} cb={() => mobileClickHandler('about')} />
+						<Dial title="Education/Experience" size="lg"  position={experienceDial} setPosition={setExperienceDial} cb={() => mobileClickHandler('ed')} />
+						<Dial title="Skills" size="lg" position={skillsDial} setPosition={setSkillsDial} cb={() => mobileClickHandler('skills')} />
 					</div>
 				) : (
 					<div className="dialsContainer" style={{padding: '32px 0px 0px'}}>
-						<Dial title="About" position={extrasDial} setPosition={setExtrasDial}  />
-						<Dial title="Education/Experience" position={experienceDial} setPosition={setExperienceDial} cb={() => !expSelected ? setExpSelected(true) : null} />
-						<Dial title="Skills" position={skillsDial} setPosition={setSkillsDial} cb={() => expSelected ? setExpSelected(false) : null} />
+						<Dial title="About" size="lg"  position={extrasDial} setPosition={setExtrasDial}  />
+						<Dial title="Education/Experience" size="lg"  position={experienceDial} setPosition={setExperienceDial} cb={() => !expSelected ? setExpSelected(true) : null} />
+						<Dial title="Skills" size="lg"  position={skillsDial} setPosition={setSkillsDial} cb={() => expSelected ? setExpSelected(false) : null} />
 					</div>
 				)}
 				{!mobileClickHandler && (

@@ -1,10 +1,10 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { FaChevronLeft, FaChevronRight, FaJs, FaReact, FaHtml5, FaPython, FaPhone, FaRegLightbulb } from "react-icons/fa6";
 import { AiOutlineDotNet } from "react-icons/ai";
 import { DiMysql } from "react-icons/di";
-import { GrGraphQl } from "react-icons/gr";
+// import { GrGraphQl } from "react-icons/gr";
 import { FaMusic, FaRegSmile, FaRegFile } from "react-icons/fa";
-import { GiGuitarBassHead } from "react-icons/gi";
+// import { GiGuitarBassHead } from "react-icons/gi";
 
 import './App.css'
 import { useWindowResize } from './utils'
@@ -14,7 +14,7 @@ import InfoPanel from './InfoPanel'
 import Contact from './Contact'
 import BigMuff from './BigMuff'
 import MiniMuff from './MiniMuff'
-import TubeScreamer from './TubeScreamer'
+// import TubeScreamer from './TubeScreamer'
 
 export interface Dial {
   title: string,
