@@ -66,14 +66,14 @@ const technicalSkills: PanelItem[] = [
 	{
 		id: 2,
 		title: 'C#/ASP.NET',
-		description: `At Razor Tracking, I've worked extensively with ASP.NET and ASP.NET Core in an MVC architecture. My primary responsibilities include designing and implementing REST API endpoints, developing backend business logic, and transforming data for consumption by the front-end application. This experience has strengthened my understanding of scalable backend architecture and full-stack application development.`,
+		description: `At Razor Tracking, I worked extensively with ASP.NET and ASP.NET Core in an MVC architecture. My primary responsibilities included designing and implementing REST API endpoints, developing backend business logic, and transforming data for consumption by the front-end application. This experience has strengthened my understanding of scalable backend architecture and full-stack application development.`,
 		years: 3,
 		icon: <AiOutlineDotNet />
 	},
 	{
 		id: 3,
 		title: 'SQL',
-		description: `SQL has become one of my favorite technologies to work with. I enjoy designing efficient queries and continually looking for opportunities to improve performance and readability. At Razor Tracking, I use SQL daily for debugging, reporting, and data analysis, while also creating and modifying database tables, schemas, and stored data as new features require.`,
+		description: `SQL has become one of my favorite technologies to work with. I enjoy designing efficient queries and continually looking for opportunities to improve performance and readability. At Razor Tracking, I used SQL daily for debugging, reporting, and data analysis, while also creating and modifying database tables, schemas, and stored data as new features require.`,
 		years: 3,
 		icon: <DiMysql />
 	},
@@ -104,8 +104,8 @@ const experienceItems: PanelItem[] = [
 		{
 		id: 0,
 		title: 'Razor Tracking',
-		description: `As a Full Stack Software Engineer at Razor Tracking, I contribute to the development and maintenance of the company's proprietary fleet management platform. My work spans the entire technology stack, including ASP.NET, C#, Vue, React, SQL, and JavaScript. I'm responsible for delivering features from initial design through production deployment, implementing both frontend and backend functionality, and contributing to the evolution of the underlying database architecture.`,
-		range: ['Nov 2023', 'Present']
+		description: `As a Full Stack Software Engineer at Razor Tracking, I contributed to the development and maintenance of the company's proprietary fleet management platform. My work spanned the entire technology stack, including ASP.NET, C#, Vue, React, SQL, and JavaScript. I was responsible for delivering features from initial design through production deployment, implementing both frontend and backend functionality, and contributing to the evolution of the underlying database architecture.`,
+		range: ['Nov 2023', 'July 2026']
 	},
 	{
 		id: 1,
