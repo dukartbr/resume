@@ -3,7 +3,7 @@
   font-family: "Roboto", sans-serif;
   position: relative;
   overflow-x: hidden;
-  overflow-y: hidden;
+  overflow-y: scroll;
   background-color: #F2F2F2;
 }
 
