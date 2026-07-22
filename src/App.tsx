@@ -155,7 +155,7 @@ const passionItems: PanelItem[] = [
 	{
 		id: 2,
 		title: 'Lets Talk Music!',
-		description: `I've been in local bands since I was fourteen and have always felt at home in local music scenes since. I've been in multiple bands of different genres while always making music of my own. I play guitar, bass, piano, a little drums, and am getting very into desktop synths currently.`,
+		description: `I've been in local bands since I was fourteen and have always felt at home in local music scenes. I've been in multiple bands of different genres while always making music of my own. I play guitar, bass, piano, a little drums, and am getting very into desktop synths currently.`,
 		icon: <FaMusic />
 	},
 	{
@@ -176,7 +176,7 @@ const passionItems: PanelItem[] = [
 	{
 		id: 4,
 		title: 'Contact',
-		description: `I'm always happy to connect and can be reached through any of the following methods:`,
+		description: `I'm always happy to connect and can be reached at:`,
 		list: [
 			{
 				text: '701-729-3582',
