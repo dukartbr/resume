@@ -1,10 +1,9 @@
 import { useState } from 'react';
-import { FaChevronLeft, FaChevronRight, FaJs, FaReact, FaHtml5, FaPython, FaPhone, FaRegLightbulb } from "react-icons/fa6";
+import { FaChevronLeft, FaChevronRight, FaJs, FaReact, FaHtml5, FaPython, FaPhone, FaRegLightbulb, FaLaptopCode, FaGithub } from "react-icons/fa6";
 import { AiOutlineDotNet } from "react-icons/ai";
 import { DiMysql } from "react-icons/di";
 import { GrGraphQl } from "react-icons/gr";
-import { FaMusic, FaRegSmile, FaRegFile } from "react-icons/fa";
-// import { GiGuitarBassHead } from "react-icons/gi";
+import { FaRegSmile, FaRegFile } from "react-icons/fa";
 
 import './App.css'
 import { useWindowResize } from './utils'
@@ -154,9 +153,19 @@ const passionItems: PanelItem[] = [
 	},
 	{
 		id: 2,
-		title: 'Lets Talk Music!',
-		description: `I've been in local bands since I was fourteen and have always felt at home in local music scenes. I've been in multiple bands of different genres while always making music of my own. I play guitar, bass, piano, a little drums, and am getting very into desktop synths currently.`,
-		icon: <FaMusic />
+		title: 'Websites I\'ve built',
+		description: 'I\'m always looking for reasons to code! Here are two websites I built and maintain for local businesses in Fargo',
+		icon: <FaLaptopCode />,
+		list: [
+			{
+				text: 'Red River Ambucs',
+				link: 'https://redriverambucs.org'
+			},
+			{
+				text: 'Wheel Tech by CARS',
+				link: 'https://wheeltechbycars.com'
+			}
+		],
 	},
 	{
 		id: 3,
@@ -185,6 +194,10 @@ const passionItems: PanelItem[] = [
 			{
 				text: 'dukartbrady@gmail.com',
 				link: 'mailto:dukartbrady@gmail.com'
+			},
+			{
+				text: 'Github',
+				link: 'https://github.com/dukartbr'
 			}
 		],
 		icon: <FaPhone />
@@ -206,9 +219,13 @@ function App() {
 			<div id="bodyContainer" onClick={() => hireModalOpen ? setHireModalOpen(false) : null}>
 				<div id="header">
 					<span>Brady Dukart</span>
-					<span id="contactLink" onClick={() => !hireModalOpen ? setHireModalOpen(true) : null}>Contact</span>
+					<div style={{
+						display: 'flex'
+					}}>
+						<span className="contactLink" style={{ paddingRight: '20px'}} onClick={() => !hireModalOpen ? setHireModalOpen(true) : null}>Contact</span>
+						<a href="https://github.com/dukartbr" target="_blank"><FaGithub className="contactLink" /></a>
+					</div>
 				</div>
-				{/* <div className="infoHeader">Dial the Knobs, Toggle the Switch, Stomp the Box, or Switch the Pedal!</div> */}
 				{windowSize == 'full' && (
 					<>
 						<div className="infoHeader">Dial the Knobs, Toggle the Switch, or Stomp the Pedal!</div>

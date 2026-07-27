@@ -1,10 +1,10 @@
-import { FaPhone, FaEnvelope, FaFile } from "react-icons/fa6";
+import { FaPhone, FaEnvelope, FaFile, FaGithub } from "react-icons/fa6";
 
 export default function Contact() {
 	return (
 		<div id="modal">
 				<span id="modalHeader">I'm so excited to connect with you!</span>
-				<span>Feel free to reach out to me anytime!</span>
+				<span  id="modalSubHeader">Feel free to reach out to me anytime!</span>
 				<div id="modalContact">
 					<a href="tel:701-729-3582">
 						<FaPhone className="modalIcon" />
@@ -17,6 +17,10 @@ export default function Contact() {
 					<a href="./BradyDukart_Resume.pdf" target="_blank">
 						<FaFile className="modalIcon" />
 						<span className="modalIconTitle">Resume</span>
+					</a>
+					<a href="https://github.com/dukartbr" target="_blank">
+						<FaGithub className="modalIcon" />
+						<span className="modalIconTitle">Github</span>
 					</a>
 				</div>
 		</div>

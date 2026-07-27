@@ -19,8 +19,15 @@
   font-family: "Roboto", sans-serif;
 }
 
-#contactLink:hover {
+#header a {
+  color: white;
+}
+
+.contactLink {
   cursor: pointer;
+}
+
+.contactLink:hover {
   text-decoration: underline;
 }
 
@@ -81,8 +88,7 @@
 
 .modalIconTitle {
   font-size: 1.25rem;
-  margin-top: 0.5rem;
-  color: #049dd9;
+  margin-top: 1rem;
 }
 
 #modalContact a {
