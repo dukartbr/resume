@@ -376,6 +376,12 @@
   font-family: "Lilita One", sans-serif;
 }
 
+.infoSubHeader {
+  color: #444444;
+  text-align: center;
+  padding: 4px 0px;
+}
+
 .infoContainer {
   background-color: #ffffff;
   height: 680px;

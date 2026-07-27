@@ -212,6 +212,7 @@ function App() {
 				{windowSize == 'full' && (
 					<>
 						<div className="infoHeader">Dial the Knobs, Toggle the Switch, or Stomp the Pedal!</div>
+						<div className="infoSubHeader">This is a replica of the <a href="https://www.sweetwater.com/store/detail/BassBigMuff--electro-harmonix-bass-big-muff-pi-bass-fuzz-pedal" target="_blank">Electro Harmonix Bass Guitar Fuzz Pedal</a></div>
 						<div id="main">
 							<InfoPanel title="About" position={extrasDial} items={passionItems} panelHandler={(val) => setExtrasDial(val)} />
 								<div id="pedalContainer">
