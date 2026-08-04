@@ -1,4 +1,4 @@
-import Dial from './Dial'
+import Dial from './MobileDial'
 import type { Pedal } from './App'
 
 export default function MiniMuff({
@@ -17,9 +17,9 @@ export default function MiniMuff({
 			<div id="miniMuff">
 				{mobileClickHandler && (
 					<div className="dialsContainer" style={{padding: '32px 0px 0px'}}>
-						<Dial title="About" size="sm" position={extrasDial} setPosition={setExtrasDial} cb={() => mobileClickHandler('about')} />
-						<Dial title="Experience"  size="sm" position={experienceDial} setPosition={setExperienceDial} cb={() => mobileClickHandler('ed')} />
-						<Dial title="Skills" size="sm" position={skillsDial} setPosition={setSkillsDial} cb={() => mobileClickHandler('skills')} />
+						<Dial title="About" position={extrasDial} setPosition={setExtrasDial} cb={() => mobileClickHandler('about')} />
+						<Dial title="Experience"  position={experienceDial} setPosition={setExperienceDial} cb={() => mobileClickHandler('ed')} />
+						<Dial title="Skills" position={skillsDial} setPosition={setSkillsDial} cb={() => mobileClickHandler('skills')} />
 					</div>
 				)}
 			</div>

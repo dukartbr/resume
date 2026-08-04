@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { FaChevronLeft, FaChevronRight, FaJs, FaReact, FaHtml5, FaPython, FaPhone, FaRegLightbulb, FaLaptopCode, FaGithub } from "react-icons/fa6";
+import { FaJs, FaReact, FaHtml5, FaPython, FaPhone, FaRegLightbulb, FaLaptopCode, FaGithub } from "react-icons/fa6";
 import { AiOutlineDotNet } from "react-icons/ai";
 import { DiMysql } from "react-icons/di";
 import { GrGraphQl } from "react-icons/gr";

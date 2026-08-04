@@ -52,7 +52,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   width: 600px;
-  height: 200px;
+
   background-color: #ffffff;
   z-index: 5;
   border-radius: 20px;
@@ -77,6 +77,7 @@
   width: 100%;
   justify-content: space-between;
   padding-top: 25px;
+  flex-direction: row
 }
 
 .modalIcon {
@@ -477,3 +478,16 @@
   box-shadow: 5px 5px 10px #000000;
 }
 
+@media screen and (max-width: 1080px) {
+  #modal {
+    width: 80dvw;
+  }
+
+  .modalIconTitle {
+    padding-bottom: 1rem;
+  }
+
+  #modalContact {
+    flex-direction: column
+  }
+}

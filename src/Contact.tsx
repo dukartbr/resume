@@ -3,8 +3,7 @@ import { FaPhone, FaEnvelope, FaFile, FaGithub } from "react-icons/fa6";
 export default function Contact() {
 	return (
 		<div id="modal">
-				<span id="modalHeader">I'm so excited to connect with you!</span>
-				<span  id="modalSubHeader">Feel free to reach out to me anytime!</span>
+				<span id="modalHeader">Feel free to reach out to me anytime!</span>
 				<div id="modalContact">
 					<a href="tel:701-729-3582">
 						<FaPhone className="modalIcon" />
