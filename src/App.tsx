@@ -188,10 +188,6 @@ const passionItems: PanelItem[] = [
 		description: `I'm always happy to connect and can be reached at:`,
 		list: [
 			{
-				text: '701-729-3582',
-				link: 'tel:701-729-3582'
-			},
-			{
 				text: 'dukartbrady@gmail.com',
 				link: 'mailto:dukartbrady@gmail.com'
 			},
